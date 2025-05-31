@@ -8,12 +8,14 @@
     {% load bootstrap5 %}
     {% bootstrap_css %}
     {% bootstrap_javascript %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
   </head>
 
-  <body style="background-color: #3FEEE6; color:#1E1076">  
+  <body style="color: #1E1076">  
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg p-2 navbar-light" style="background-color:#FC4445">
+    <nav class="navbar navbar-expand-lg p-2 navbar-light sticky-top navbar-custom" style="border-bottom: 1px solid #0000001a">
       <div class="container-fluid">
+        {% comment %} MAKE NEW LOGO: Light blue not show good {% endcomment %}
         <a href="{% url 'index' %}"><img src="{% static 'images/wis-scan-sheets-high-resolution-logo-transparent.png' %}" alt="Logo WIS Scan Sheets" width="250" height="auto"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navbarNav">
